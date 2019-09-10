@@ -1,6 +1,6 @@
 module github.com/instrumenta/conftest
 
-go 1.12
+go 1.13
 
 require (
 	cloud.google.com/go v0.39.0 // indirect
@@ -43,12 +43,16 @@ require (
 	golang.org/x/crypto v0.0.0-20190513172903-22d7a77e9e5f // indirect
 	golang.org/x/oauth2 v0.0.0-20190523182746-aaccbc9213b0 // indirect
 	golang.org/x/sys v0.0.0-20190526052359-791d8a0f4d09 // indirect
+	golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7 // indirect
 	google.golang.org/appengine v1.6.0 // indirect
 	google.golang.org/genproto v0.0.0-20190620144150-6af8c5fc6601 // indirect
 )
 
 replace (
+	git.apache.org/thrift.git => github.com/apache/thrift v0.0.0-20180902110319-2566ecd5d999
 	github.com/containerd/containerd => github.com/containerd/containerd v1.2.6
 	github.com/docker/docker => github.com/docker/docker v0.0.0-20190131205458-8a43b7bb99cd
 	github.com/golang/lint => golang.org/x/lint v0.0.0-20190409202823-959b441ac422
+	github.com/opencontainers/runc v1.0.1-0.20190307181833-2b18fe1d885e => github.com/opencontainers/runc v1.0.0-rc6.0.20190307181833-2b18fe1d885e
+	golang.org/x/crypto v0.0.0-20190129210102-0709b304e793 => golang.org/x/crypto v0.0.0-20180904163835-0709b304e793
 )
